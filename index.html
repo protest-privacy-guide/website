@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Protest Privacy Guide</title>
-  <meta name="description" content="A protester's guide to hardening mobile phone security against surveillance">
+  <meta name="description" content="A protester's guide to hardening mobile phones against surveillance and inspection">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/svg+xml" href="public/icon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -11,13 +11,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="public/style.min.css" type="text/css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <span class="material-icons">security</span>
       <span class="d-none d-lg-flex d-xl-flex" id="navbar-title-lg">&nbsp;Protest Privacy Guide&nbsp;</span>
     </a>
@@ -41,182 +42,181 @@
     </div>
   </nav>
 </header>
+<main>
+  <div class="container">
+    <div class="content">
 
-<div class="container">
-  <div class="content">
-
-    <div class="accordion" id="os-select-screen">
-      <h5 id="os-select-screen-header"><p>What device are you using?</p></h5>
-      <div class="card">
-        <div class="card-header" id="ios-header">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse">
-              <b>iPhone</b>
-            </button>
-          </h2>
+      <div class="accordion" id="os-select-screen">
+        <h5 id="os-select-screen-header"><p>What device are you using?</p></h5>
+        <div class="card">
+          <div class="card-header" id="ios-header">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse">
+                <b>iPhone</b>
+              </button>
+            </h2>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="android-header">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse">
-              <b>Android</b>
-            </button>
-          </h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion" id="phone-1-accordion">
-      <div class="card">
-        <div class="card-header" id="phone-1-header">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#list-phone-1" aria-expanded="false" aria-controls="list-phone-1">
-              <b>1.</b> Update your phone
-              <span class="more-info material-icons" data-item="1">help_outline</span>
-            </button>
-          </h2>
-        </div>
-        <div id="list-phone-1" class="collapse" aria-labelledby="phone-1-header" data-parent="#phone-1-accordion">
-          <div class="card-body">
-            <span class="step android">
-              <p>Go to <code>Settings</code> and type <code>update</code> in the search bar.</p>
-              <p>Press the option for <code>System update</code>, <code>Check for updates</code>, or something similar.</p>
-            </span>
-            <span class="step ios">
-              <p>Go to <code>Settings</code> -> <code>General</code> -> <code>Software Update</code>.</p>
-            </span>
-            <p>It's best if you have your phone <b>plugged in</b> and connected to <b>Wi-Fi</b>.</p>
+        <div class="card">
+          <div class="card-header" id="android-header">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse">
+                <b>Android</b>
+              </button>
+            </h2>
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-header" id="phone-2-header">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#list-phone-2" aria-expanded="false" aria-controls="list-phone-2">
-              <b>2.</b> Lock it down
-              <span class="more-info material-icons" data-item="2">help_outline</span>
-            </button>
-          </h2>
-        </div>
-        <div id="list-phone-2" class="collapse" aria-labelledby="phone-2-header" data-parent="#phone-1-accordion">
-          <div class="card-body">
-            <span class="step android">
-              <p><u><b>Encrypt your phone</b></u></p>
-              <p>Most newer phones enable this by default. To make sure, go to <code>Settings</code> and type <code>encrypt</code> into the search bar. Choose an option like <code>Encrypt phone</code> and make sure it is labeled <code>On</code>, <code>Encrypted</code>, or something similar. If not, tap the <code>Encrypt phone</code> option to begin the process. This could take an hour or more and you should keep your phone plugged in until it's finished.</p>
-            </span>
-            <p><u><b>Disable biometrics</b></u></p>
-            <span class="step ios">
-              <p>Go to <code>Settings</code> -> <code>Touch [or Face] ID & Passcode</code> and enter your passcode, then toggle off <code>iPhone Unlock</code>.</p>
-              <p>Make sure your PIN or password is a <abbr title="Length is more important than diverse characters. For instance, 'For God so loved the world' is a stronger password than 'X>`7&sZ/=6H];'">strong</abbr> one.</p>
-            </span>
-            <span class="step android">
-              <p>Go to <code>Settings</code> -> <code>Security</code> and choose <code>Screen lock</code>. Select <code>PIN</code> or <code>Password</code> and enter a <abbr title="Length is more important than diverse characters. For example, 'For God so loved the world' is a stronger password than 'X>`7&sZ/=6H];'">strong</abbr> one.</p>
-              <p>Toggle off or disable any fingerprint or facial recognition features.
-              <p>For <b>Google Pixels</b>, in <code>Security</code>, go to <code>Pixel Imprint</code> and press the <i class="material-icons">delete</i> icon next to each fingerprint to delete them, which disables fingerprint access.</p>
-              <p><u><b>Improve your lock</b></u></p>
-              <p>Press the <i class="material-icons">settings</i> icon next to <code>Screen lock</code>. Turn <code>Power button instantly locks</code> to on.</p>
-              <p>Return to the <code>Security</code> menu and select <code>Smart lock</code>. Select each smart lock option and make sure it's disabled on the next screen.
-            </span>
-            <div class="alert alert-info">
+      <div class="accordion" id="phone-1-accordion">
+        <div class="card">
+          <div class="card-header" id="phone-1-header">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#list-phone-1" aria-expanded="false" aria-controls="list-phone-1">
+                <b>1.</b> Update your phone
+                <span class="more-info material-icons" data-item="1">help_outline</span>
+              </button>
+            </h2>
+          </div>
+          <div id="list-phone-1" class="collapse" aria-labelledby="phone-1-header" data-parent="#phone-1-accordion">
+            <div class="card-body">
+              <span class="step android">
+                <p>Go to <code>Settings</code> and type <code>update</code> in the search bar.</p>
+                <p>Press the option for <code>System update</code>, <code>Check for updates</code>, or something similar.</p>
+              </span>
               <span class="step ios">
-                You can quickly access your camera even when your phone is locked by swiping left on the lock screen.
+                <p>Go to <code>Settings</code> -> <code>General</code> -> <code>Software Update</code>.</p>
+              </span>
+              <p>It's best if you have your phone <b>plugged in</b> and connected to <b>Wi-Fi</b>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="phone-2-header">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#list-phone-2" aria-expanded="false" aria-controls="list-phone-2">
+                <b>2.</b> Lock it down
+                <span class="more-info material-icons" data-item="2">help_outline</span>
+              </button>
+            </h2>
+          </div>
+          <div id="list-phone-2" class="collapse" aria-labelledby="phone-2-header" data-parent="#phone-1-accordion">
+            <div class="card-body">
+              <span class="step android">
+                <p><b>- Encrypt your phone</b></p>
+                <p>Most newer phones enable this by default. To make sure, go to <code>Settings</code> and type <code>encrypt</code> into the search bar. Choose an option like <code>Encrypt phone</code> and make sure it is labeled <code>On</code>, <code>Encrypted</code>, or something similar. If not, tap the <code>Encrypt phone</code> option to begin the process. This could take an hour or more and you should keep your phone plugged in until it's finished.</p>
+              </span>
+              <p><b>- Disable biometrics</b></p>
+              <span class="step ios">
+                <p>Go to <code>Settings</code> -> <code>Touch [or Face] ID & Passcode</code> and enter your passcode, then toggle off <code>iPhone Unlock</code>.</p>
+                <p>Make sure your PIN or password is a <abbr data-toggle="tooltip" data-placement="top" title="Length is more important than diverse characters. For instance, 'For God so loved the world' is a stronger password than 'X>`7&sZ/=6H];'">strong</abbr> one.</p>
               </span>
               <span class="step android">
-                You can access your camera from the lock screen by quickly pressing the power button twice.
+                <p>Go to <code>Settings</code> -> <code>Security</code> and choose <code>Screen lock</code>. Select <code>PIN</code> or <code>Password</code> and enter a <abbr data-toggle="tooltip" data-placement="top" title="Length is more important than diverse characters. For example, 'For God so loved the world' is a stronger password than 'X>`7&sZ/=6H];'">strong</abbr> one.</p>
+                <p>Toggle off or disable any fingerprint or facial recognition features.
+                <p>For <b>Google Pixels</b>, in <code>Security</code>, go to <code>Pixel Imprint</code> and press the <i class="material-icons">delete</i> icon next to each fingerprint to delete them, which disables fingerprint access.</p>
+                <p><b>- Improve your lock</b></p>
+                <p>Press the <i class="material-icons">settings</i> icon next to <code>Screen lock</code>. Turn <code>Power button instantly locks</code> to on.</p>
+                <p>Return to the <code>Security</code> menu and choose <code>Smart lock</code>. Select each smart lock option and make sure it's disabled on the next screen.
               </span>
+              <div class="alert alert-info">
+                <span class="step ios">
+                  You can quickly access your camera even when your phone is locked by swiping left on the lock screen.
+                </span>
+                <span class="step android">
+                  You can access your camera from the lock screen by quickly pressing the power button twice.
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card-header" id="phone-3-header">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#list-phone-3" aria-expanded="false" aria-controls="list-phone-3">
-              <b>3.</b> Secure your communications
-              <span class="more-info material-icons" data-item="3">help_outline</span>
-            </button>
-          </h2>
-        </div>
-        <div id="list-phone-3" class="collapse" aria-labelledby="phone-3-header" data-parent="#phone-1-accordion">
-          <div class="card-body">
-            <p><u><b>Communication</b></u></p>
-            <span class="step android">
-              <p>Download the <a href="https://signal.org/install">Signal</a> app for encrypted texts and phone calls.</p>
-            </span>
-            <span class="step ios">
-              <p>Texts sent between <b>iMessage</b> users and <b>FaceTime</b> calls are <b><abbr title="This makes it much more difficult for people outside the conversation to spy on it.">end-to-end encrypted</abbr></b>, and messages stored on your iPhone are encrypted as well.</p>
-              <p>If you have contacts who don't use an iPhone, you both can download the <b><a href="https://signal.org/install">Signal</a></b> app for encrypted texts and phone calls.</p>
-            </span>
-            <p><b>Be aware</b> that your contacts need to be using Signal too for encryption to work.</p>
-            <p><u><b>Web traffic</b></u></p>
-            <p>Download the <b><a href="https://1.1.1.1/">1.1.1.1</a></b> app from Cloudflare to automatically encrypt all your internet traffic and <abbr title="DNS is like a phonebook that computers use to find websites. If someone is spying on your DNS requests, it's easy to tell what websites you're visiting.">DNS requests</abbr> by default.</p>
+        <div class="card">
+          <div class="card-header" id="phone-3-header">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#list-phone-3" aria-expanded="false" aria-controls="list-phone-3">
+                <b>3.</b> Secure your communications
+                <span class="more-info material-icons" data-item="3">help_outline</span>
+              </button>
+            </h2>
           </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header" id="phone-4-header">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#list-phone-4" aria-expanded="false" aria-controls="list-phone-4">
-              <b>4.</b> Mitigate tracking
-              <span class="more-info material-icons" data-item="4">help_outline</span>
-            </button>
-          </h2>
-        </div>
-        <div id="list-phone-4" class="collapse" aria-labelledby="phone-4-header" data-parent="#phone-1-accordion">
-          <div class="card-body">
-            <h5><p>It's up to you to decide if taking measures to prevent your location from being tracked is appropriate for your situation.</p></h5>
-            <p><u><b>Disable Wi-Fi and Bluetooth</b></u></p>
-            <span class="step ios">
-              <p>Go to <code>Settings</code> -> <code>Wi-Fi</code> and toggle Wi-Fi off.</p>
-              <p>Go to <code>Settings</code> -> <code>Bluetooth</code> and toggle Bluetooth off.</p>
-              <p>Turning these off in the Control Center <b>is not effective.</b></p>
-            </span>
-            <span class="step android">
-              <p>Go to <code>Settings</code> and open your <code>Network</code> settings, then toggle <code>Wi-Fi</code> and <code>Bluetooth</code> off. If <code>Bluetooth</code> is not present, search <code>bluetooth</code> in <code>Settings</code>.</p>
-              <p>In <code>Settings</code>, search <code>scanning</code> and toggle off both <code>Wi-Fi</code> and <code>Bluetooth scanning</code>.</p>
-            </span>
-            <p><u><b>Disable GPS</b></u></p>
-            <span class="step ios">
-              <p>Go to <code>Settings</code> -> <code>Privacy</code> -> <code>Location Services</code> and toggle <code>Location Services</code> off.</p>
-            </span>
-            <span class="step android">
-              <p>Go to <code>Settings</code> -> <code>Location</code>, or search <code>location</code>, and toggle it off.</p>
-            </span>
-            <p>If <code>Airplane Mode</code> is enabled, it's <abbr title="GPS is a receive-only system and your GPS coordinates should not be transmitted if your cellular and Wi-Fi radios are off.">probably safe</abbr> to turn on your location so you can see where you are on a navigation app.</p>
-            <p><u><b>Guard your location</b></u></p>
-
-            <p>Law enforcement agencies can use devices often called <b><a href="https://www.eff.org/wp/gotta-catch-em-all-understanding-how-imsi-catchers-exploit-cell-networks">Stingrays</a></b> which mimic cell towers and can intercept calls, texts, and internet traffic sent from your phone.</p>
-            <p>Your phone also broadcasts a unique identifier called an <abbr title="International Mobile Subscriber Identity">IMSI</abbr> to cell towers that can be used to track your movements and prove that you attended a protest.</p>
-            <p>The only way to positively prevent your location from being tracked is to <b>keep your phone off</b> or <b>leave it at home</b>. However, enabling <code>Airplane Mode</code> before you arrive at the protest, leaving it enabled the entire time you're there, and disabling it only after you leave may make it harder to prove you were there.</p>
-            <div class="alert alert-warning">
-              You can also be identified by <b>automatic license plate readers</b> or <b>facial recognition systems</b>. For that reason, <b>consider not driving</b> your car to a protest if possible, and <b>keep your face covered</b> with glasses, a face bandana, and a head covering near the area of the protest. <b>Be aware</b> of any features that distinguish you like distinct backpacks, tattoos, or hairstyles.
+          <div id="list-phone-3" class="collapse" aria-labelledby="phone-3-header" data-parent="#phone-1-accordion">
+            <div class="card-body">
+              <p><b>- Communication</b></p>
+              <span class="step android">
+                <p>Download the <a href="https://signal.org/install">Signal</a> app for encrypted texts and phone calls.</p>
+              </span>
+              <span class="step ios">
+                <p>Texts sent between <b>iMessage</b> users and <b>FaceTime</b> calls are <b><abbr data-toggle="tooltip" data-placement="top" title="This makes it much more difficult for people outside the conversation to spy on it.">end-to-end encrypted</abbr></b>, and messages stored on your iPhone are encrypted as well.</p>
+                <p>If you have contacts who don't use an iPhone, you both can download the <b><a href="https://signal.org/install">Signal</a></b> app for encrypted texts and phone calls.</p>
+              </span>
+              <p><b>Be aware</b> that your contacts need to be using Signal too for encryption to work.</p>
+              <p><b>- Web traffic</b></p>
+              <p>Download the <b><a href="https://1.1.1.1/">1.1.1.1</a></b> app from Cloudflare to automatically encrypt all your internet traffic and <abbr data-toggle="tooltip" data-placement="top" title="DNS is like a phonebook that computers use to find websites. If someone is spying on your DNS requests, it's easy to tell what websites you're visiting.">DNS requests</abbr> by default.</p>
             </div>
           </div>
         </div>
+
+        <div class="card">
+          <div class="card-header" id="phone-4-header">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#list-phone-4" aria-expanded="false" aria-controls="list-phone-4">
+                <b>4.</b> Mitigate tracking
+                <span class="more-info material-icons" data-item="4">help_outline</span>
+              </button>
+            </h2>
+          </div>
+          <div id="list-phone-4" class="collapse" aria-labelledby="phone-4-header" data-parent="#phone-1-accordion">
+            <div class="card-body">
+              <div class="alert alert-info">
+                It's up to you to decide if taking measures to prevent your location from being tracked is appropriate for your situation.
+              </div>
+              <p><b>- Disable Wi-Fi and Bluetooth</b></p>
+              <span class="step ios">
+                <p>Go to <code>Settings</code> -> <code>Wi-Fi</code> and toggle Wi-Fi off.</p>
+                <p>Go to <code>Settings</code> -> <code>Bluetooth</code> and toggle Bluetooth off.</p>
+                <p>Turning these off in the Control Center <b>is not effective.</b></p>
+              </span>
+              <span class="step android">
+                <p>Go to <code>Settings</code> and open your <code>Network</code> settings, then toggle <code>Wi-Fi</code> and <code>Bluetooth</code> off. If <code>Bluetooth</code> is not present, search <code>bluetooth</code> in <code>Settings</code>.</p>
+                <p>In <code>Settings</code>, search <code>scanning</code> and toggle off both <code>Wi-Fi</code> and <code>Bluetooth scanning</code>.</p>
+              </span>
+              <p><b>- Disable GPS</b></p>
+              <span class="step ios">
+                <p>Go to <code>Settings</code> -> <code>Privacy</code> -> <code>Location Services</code> and toggle <code>Location Services</code> off.</p>
+              </span>
+              <span class="step android">
+                <p>Go to <code>Settings</code> -> <code>Location</code>, or search <code>location</code>, and toggle it off.</p>
+              </span>
+              <p>If <code>Airplane Mode</code> is enabled, it's <abbr data-toggle="tooltip" data-placement="top" title="GPS is a receive-only system and your GPS coordinates should not be transmitted if your cellular and Wi-Fi radios are off.">probably safe</abbr> to turn on your location so you can see where you are on a navigation app.</p>
+              <p><b>- Cellular surveillance</b></p>
+              <p>Your phone broadcasts a unique identifier called an <abbr data-placement="top" data-toggle="tooltip" title="International Mobile Subscriber Identity">IMSI</abbr> to cell towers that can be used to track your movements and prove that you attended a protest. Law enforcement agencies can use devices often called <b><a href="https://www.eff.org/wp/gotta-catch-em-all-understanding-how-imsi-catchers-exploit-cell-networks">Stingrays</a></b> which mimic cell towers and can intercept this identifier as well as calls, texts, and internet traffic sent from your phone.</p>
+              <p><b>The only way</b> to positively prevent your location from being tracked is to <b>keep your phone off</b> or <b>leave it at home</b>. However, enabling <code>Airplane Mode</code> before you arrive at the protest, leaving it enabled the entire time you're there, and disabling it only after you leave may make it harder to prove you were there.</p>
+              <div class="alert alert-warning">
+                You can also be identified by <b>automatic license plate readers</b> or <b>facial recognition systems</b>. For that reason, <b>consider not driving</b> your car to a protest if possible, and <b>keep your face covered</b> with glasses, a face bandana, and a head covering near the area of the protest. <b>Be aware</b> of any features that distinguish you like distinct backpacks, tattoos, or hairstyles.
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-muted" id="switch-to-android"><span id="switch-to-android-link">See the Android guide</span></p>
+        <p class="text-muted" id="switch-to-ios"><span id="switch-to-ios-link">See the iPhone guide</span></p>
       </div>
-      <p class="text-muted" id="switch-to-android"><span id="switch-to-android-link">See the Android guide</span></p>
-      <p class="text-muted" id="switch-to-ios"><span id="switch-to-ios-link">See the iPhone guide</span></p>
+
     </div>
-
   </div>
-</div>
+</main>
 
 <footer id="footer">
   <a class="text-muted" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 No rights reserved</a>
 </footer>
 
 <div class="modal fade" id="more-info-modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title"><b>Why is this important?</b></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body"></div>
     </div>
